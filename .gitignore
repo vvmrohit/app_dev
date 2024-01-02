@@ -1,0 +1,35 @@
+# Byte-compiled / optimized Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+
+# Logs and databases
+*.log
+*.sqlitedb
+
+# MongoDB files
+/data/db
+*.db
+
+# Docker files
+docker-compose.yml
+docker-compose.override.yml
+*.env
+.env
+
+# System and environment files
+.DS_Store
+.envrc
+.env.local
+.env.*.local
+.env.override
+.env.development
+.env.test
+.env.production
+.env.local_backup
+.env.*.local_backup
