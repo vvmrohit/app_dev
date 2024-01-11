@@ -115,6 +115,15 @@ class Get(Resource):
             }
             return jsonify(retJson)
         
+        users.update_one({
+            "Username" : username 
+            },
+            {
+                "$set" : {
+                    "Tokens": num_tokens -1
+                }
+            })
+        
         sentence = users.find({
             "Username" : username})[0]["Sentence"]
         retJson = {
